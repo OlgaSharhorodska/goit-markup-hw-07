@@ -420,12 +420,9 @@ margin-right: 76px;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     margin-bottom: 72px;
+    
 }
 
-.principles-item-descr:last-child
-{
-margin-bottom: 0px;
-}
 }
 
 
