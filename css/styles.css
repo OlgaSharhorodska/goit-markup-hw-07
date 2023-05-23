@@ -105,9 +105,15 @@ color: #2E2F42;
 
 .social-media-list-mobile {
 display: flex;
-gap: 56px;
-justify-content: flex-start;
+justify-content: space-between;
     }
+
+.social-media-link
+{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
 
 @media screen and (min-width: 768px) {
     .menu-toggle {
@@ -182,6 +188,8 @@ justify-content: flex-start;
     list-style-type: none;
     }
 
+
+
 .mobile-menu-contact-item {
     padding: 0;
     margin: 0;
@@ -192,6 +200,28 @@ justify-content: flex-start;
     letter-spacing: 0.02em;
     
     color: #2E2F42;
+}
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+    .mobile-menu-contact-item 
+    {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    }
+    
+    .active-contact
+    {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+    }
 }
 
 .active-link
@@ -442,6 +472,8 @@ margin-right: 76px;
 
 
 /* =================HERO (section 1)=================== */
+
+
 @media screen and (min-width: 320px) {
     .hero {
     background-color: var(--secondary-background);
@@ -467,6 +499,7 @@ margin-right: 76px;
 background-image:
 url(../images/optim_size/Hero-main/bgc-hero_mobile@2x.jpg)
 }}
+
 
 .hero-main {
     font-weight: 700;
@@ -612,49 +645,47 @@ url(../images/optim_size/Hero-main/bgc-hero_desktop@2x.jpg)
 .icon-card {
     display: none;}
 
-.principles-menu-name {
-    font-weight: 500;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    margin-bottom: 8px;
-    
-}
-
-.principles-item-descr {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    margin-bottom: 72px;    
-}
-}
-
-@media screen and (min-width: 768px)
-{
 .principles-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-    }
-
-    .principles-card
-    {
-    width: calc((100% - 24px) / 2);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
 
 .principles-menu-name {
-    text-align: start;
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-bottom: 8px;
+
+}
+.principles-item-descr {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
     
 }
+}
+
+@media screen and (min-width: 768px)
+{
+.principles-list {
+    
+        gap: 24px;
+    }
+
+.principles-menu-name {
+    text-align: start;}
+
+    .principles-card
+    {
+    width: calc((100% - 24px) / 2);
+    }
+
 
 .principles-item-descr {
     font-size: 16px;
@@ -933,14 +964,16 @@ margin-bottom: 0;
         margin-bottom: 72px;
     }
 .customers-section {
-    padding: 96px 16px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .customers-card
 {
 display: flex;
 flex-wrap: wrap;
-gap: 16px;
+row-gap: 72px;
+column-gap: 16px;
 justify-content: center;
 }
 
@@ -955,7 +988,7 @@ justify-content: center;
     margin-left: auto;
     margin-right: auto;
     height: 88px;
-    width: calc((100% - 48px) / 2);
+    width: 190px;
 }
 
 .customer-link {
@@ -980,18 +1013,18 @@ justify-content: center;
 @media screen and (min-width: 768px)
 {
 .svg-icon {
-        width: 140px;
+        width: 104px;
         height: 56px;
         fill: currentColor;
     }
 
 .customers-card {
-    gap: 24px;
+    column-gap: 24px;
 }
     .customers-item {
 
         height: 88px;
-        width: calc((100% - 48px) / 3);
+        width: 168px;
     }
 }
 
@@ -1083,9 +1116,12 @@ justify-content: center;
     text-align: start;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 72px;
 }
 
+.section-footer-logo
+{
+margin-bottom: 72px;
+}
 .social-media-block {
     display: block;
 }
@@ -1456,11 +1492,27 @@ visibility: hidden;
 pointer-events: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 428px)
+   {
+.modal
+{
+min-width: 392px;
+height: 584px;
+}
+  }
+
+@media screen and (min-width: 768px) {
+.modal {
+width: 408px;
+min-height: 576px;
+}
+}
+
+
 .modal 
 {
 position: absolute;
-width: 408px;
-min-height: 576px;
+
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
