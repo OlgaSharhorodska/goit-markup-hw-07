@@ -450,12 +450,19 @@ margin-right: 76px;
 @media screen and (min-width: 1200px)
 {
 .contact-list {
-        display: flex;    gap: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
     }
 .contact-item {
     font-size: 16px;
     line-height: 1.5;}
 
+.contact-card
+    {
+    margin-bottom: 0px;
+    }
 }
 
 
@@ -664,7 +671,8 @@ url(../images/optim_size/Hero-main/bgc-hero_desktop@2x.jpg)
 {
 .principles-list {
     
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
 .principles-menu-name {
@@ -681,7 +689,6 @@ url(../images/optim_size/Hero-main/bgc-hero_desktop@2x.jpg)
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    margin-bottom: 72px;
     }
 
 }
@@ -1232,7 +1239,6 @@ margin-bottom: 72px;
     flex-wrap: wrap;
     text-align: start;
     margin-left: 96px;
-    
 }
 
 .section-footer-logo {
@@ -1277,6 +1283,11 @@ margin-bottom: 72px;
 
 .subscribe {
     margin-left: 80px;
+}
+
+.section-footer {
+    margin-left: auto;
+    margin-right: auto;
 }
 }
 
