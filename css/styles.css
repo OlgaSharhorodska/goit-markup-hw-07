@@ -38,17 +38,18 @@ height: auto;
 }
 
 .container {
-padding-right: 16px;
-padding-left: 16px;
+max-width: 428px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
 }
 
-@media screen and (min-width: 428px)
+@media screen and (min-width: 768px)
 {
 .container
 {
-width: 428px;
-margin-left: auto;
-margin-right: auto;
+max-width: 768px;
 }
 }
 /* ====== Mobile menu burger ======= */
@@ -243,23 +244,11 @@ margin-bottom: 40px;
 }
 }
 
-
-@media screen and (min-width: 768px)
-{
-.container 
-{
-width: 768px;
-}
-}
     
-@media screen and (min-width: 1158px) {
-.container 
-{
-width: 1158px;
-padding-left: 15px;
-padding-right: 15px;
-
-}
+@media screen and (min-width: 1200px) {
+.container {
+    max-width: 1158px;
+    }
 }
 
 
@@ -1243,7 +1232,7 @@ margin-bottom: 72px;
     flex-wrap: wrap;
     text-align: start;
     margin-left: 96px;
-    margin-right: 164px;
+    
 }
 
 .section-footer-logo {
@@ -1490,14 +1479,20 @@ visibility: hidden;
 pointer-events: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 428px)
+@media screen and (min-width: 300px) and (max-width: 399px)
    {
-.modal
-{
-min-width: 392px;
-height: 584px;
+.modal {
+max-width: 100%;
+min-height: 584px;
 }
   }
+
+@media screen and (min-width: 400px) {
+    .modal {
+        min-width: 392px;
+        
+    }
+}
 
 @media screen and (min-width: 768px) {
 .modal {
