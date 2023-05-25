@@ -468,9 +468,79 @@ margin-right: 76px;
 
 
 /* =================HERO (section 1)=================== */
+@media screen and (max-width: 350px)
+{
 
+.hero {
+        background-color: var(--secondary-background);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/optim_size/Hero-main/bgc-hero_mobile.jpg);
+        text-align: center;
+        max-width: 428px;
+        height: 432px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-@media screen and (min-width: 320px) {
+        margin: 0 auto;
+        padding-top: 112px;
+        padding-bottom: 112px;}
+
+.hero-main {
+        font-weight: 700;
+            font-size: 30px;
+            line-height: 1.1;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+        
+            margin-bottom: 72px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 320px;
+            height: 80px;
+        
+}
+.hero-button {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+
+    padding: 16px 32px;
+    gap: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: #4d5ae5;
+
+    display: block;
+    border: none;
+    min-width: 169px;
+    height: 56px;
+    margin-right: auto;
+    margin-left: auto;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color var(--transition-dur-func);
+}
+
+.hero-button:hover {
+    background-color: #404BBF;
+}
+
+.hero-button:focus {
+    background-color: #404BBF;
+}
+}
+
+@media screen and (min-width: 350px) {
     .hero {
     background-color: var(--secondary-background);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -811,15 +881,21 @@ padding-bottom: 96px;
         text-transform: capitalize;
         color: var(--primary-text-color);
 
-        margin-bottom: 72px;
-       
+        margin-bottom: 72px; 
     }
 
+.team-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+    justify-content: center;
+
+}
 
 .team-card {
     width: 264px;
     height: 428px;
-    margin-top: 72px;
+   
     background-color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
@@ -902,6 +978,7 @@ padding-bottom: 96px;
 .team-item {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 24px;
     justify-content: center;
 }
@@ -943,7 +1020,7 @@ justify-content: center;
 .team-list 
 {
 padding-top: 0;
-margin-bottom: 0;   
+
 }
 
 /* ==============Customers (section 5)========== */
@@ -1157,7 +1234,6 @@ margin-bottom: 72px;
 
 .subscribe {
     margin-top: 72px;
-    margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1580,6 +1656,8 @@ color: #2E2F42;
 margin-bottom: 16px;  
 }
 
+
+
 .modal-name
 {
 font-size: 12px;
@@ -1607,6 +1685,17 @@ transition: border-color var(--transition-dur-func);
 position: relative;
 margin-bottom: 8px;
 margin-top: 4px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .modal-form {
+        width: 100%;
+    }
+
+    .modal-input {
+        width: 270px;
+    }
 }
 
 .modal-input-svg
