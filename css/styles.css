@@ -332,10 +332,16 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 @media screen and (min-width: 768px)
 {
+
 .mobile-burger-menu
 {display: none;}
 
-.header {
+.header 
+{
+height: 100%;
+padding-left: 16px;
+padding-right: 16px;
+
 display: flex;
 align-items: center;
 justify-content: center;
@@ -410,11 +416,6 @@ margin-right: 76px;
     list-style: none;
 
     transition: color var(--transition-dur-func);
-}
-
-.contact-list{
-    margin-top: 16px;
-    margin-bottom: 16px;
 }
 
 .contact-card {
@@ -764,9 +765,11 @@ url(../images/optim_size/Hero-main/bgc-hero_desktop@2x.jpg)
 }
 
 @media screen and (min-width: 1200px) {
+
 .principles-list {
-justify-content: space-around;
+justify-content: center;
 flex-wrap: nowrap;
+gap: 24px;
     }
 
 .icon-card {
@@ -804,7 +807,7 @@ flex-wrap: nowrap;
 }
 
 .principles-card {
-    margin-right: 24px;
+    
     width: calc((100% - 72px) / 4);
    
 }
@@ -826,21 +829,23 @@ display: none;
 @media screen and (min-width: 1200px)
 {
 .gallery {
-        display: inline;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: var(--primary-text-color);
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+    
+    padding-bottom: 120px;
     }
 
     .gallery-list{
         display: flex;
         gap: 24px;
-        margin-bottom: 120px;
-    }
+           }
+
     .gallery-name {
         font-weight: 700;
         font-size: 36px;
@@ -852,9 +857,15 @@ display: none;
         margin-bottom: 72px;
     }
 
+    .gallery-list-item {
+        list-style-type: none;
+    
+        width: calc((100% - 48px) / 3);
+    }
+    
     .gallery-list-item:last-child {
         margin-right: 0;
-    }
+        }
 }
 
 /* ===============OUR TEAM (section 4)================ */
@@ -979,7 +990,8 @@ padding-bottom: 96px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
     justify-content: center;
 }
 
@@ -1341,6 +1353,7 @@ margin-bottom: 72px;
 
 .email-footer {
     width: 264px;
+    margin-bottom: 0px;
 }
 }
 
@@ -1355,16 +1368,19 @@ margin-bottom: 72px;
 
 .section-footer-logo {
     margin-right: 120px;
+    margin-bottom: 0px;
 }
 
 .subscribe {
     margin-left: 80px;
+    margin-bottom: 0px;
 }
 
 .section-footer {
     margin-left: auto;
     margin-right: auto;
 }
+
 }
 
 
